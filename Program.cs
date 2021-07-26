@@ -1,4 +1,5 @@
 ﻿using System;
+using Exception_Handling_Exercise.models;
 
 namespace Exception_Handling_Exercise {
     class Program {
@@ -30,7 +31,7 @@ namespace Exception_Handling_Exercise {
                 Room newRoom = new Room(getRoom, getName, inputDate, getTime, timeMins);
 
                 // Displays the information the user entered
-                Console.Write($"You entered: {newRoom.Code}, {newRoom.Name}, {newRoom.DateEntered.ToString("d")}, {newRoom.TimeEntered}, {newRoom.Time}");
+                Console.WriteLine($"You entered: {newRoom.Code}, {newRoom.Name}, {newRoom.DateEntered.ToString("d")}, {newRoom.TimeEntered}, {newRoom.Time}");
 
             // Catches the exception for an incorrect data type
             } catch (FormatException e) {

@@ -1,4 +1,4 @@
-namespace Exception_Handling_Exercise {
+namespace Exception_Handling_Exercise.models {
     public class Room {
         public string Code {get; set;}
         public string Name {get; set;}
